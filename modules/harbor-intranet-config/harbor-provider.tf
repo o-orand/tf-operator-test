@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    harbor = {
-      source = "BESTSELLER/harbor"
-      version = "3.5.0"
-    }
-  }
-}
-
 provider "harbor" {
   url      = format("https://%s.%s",var.harbor_intranet_hostname,var.ops_domain)
   username = var.harbor_intranet_username
